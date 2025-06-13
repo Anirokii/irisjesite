@@ -1,24 +1,43 @@
-# Welcome to your Lovable project
+Welcome to the official repository for the IRIS Junior Entreprise website.
 
-## Project info
+This project is a modern, responsive, and fully static showcase website built to present the identity, services, and achievements of IRIS JE — the Junior-Enterprise of ENIS and ESCS, based in Sfax, Tunisia.
 
-**URL**: https://lovable.dev/projects/44d7f6bf-8238-4e58-b725-1fef97f11569
+IRIS Junior Entreprise is a student-run non-profit organization that operates like a consulting firm. We provide high-quality services in:
 
-## How can I edit this code?
+Web & Mobile Development
 
-There are several ways of editing your application.
+Graphic Design & Branding
 
-**Use Lovable**
+Market Studies and Business Planning
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/44d7f6bf-8238-4e58-b725-1fef97f11569) and start prompting.
+Community Management and Digital Strategy
+-------------------------------------------------------------
 
-Changes made via Lovable will be committed automatically to this repo.
+🎯 Purpose of the Website
+This website aims to:
 
-**Use your preferred IDE**
+Promote the mission and vision of IRIS JE.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Present our departments and their service offerings.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Display key statistics and achievements.
+
+Provide a way for potential partners and clients to contact us.
+--------------------------------------------------------------
+
+🛠️ Tech Stack
+React + TypeScript — Component-based architecture
+
+TailwindCSS — Modern utility-first CSS framework
+
+React Router — For navigation between pages
+
+Animate.css / Framer Motion — For scroll and load animations
+
+Google Maps Embed — For location display
+
+Static Hosting — No backend, no database (easy to deploy anywhere)
+--------------------------------------------------------------
 
 Follow these steps:
 
@@ -41,33 +60,3 @@ npm run dev
 - Navigate to the desired file(s).
 - Click the "Edit" button (pencil icon) at the top right of the file view.
 - Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/44d7f6bf-8238-4e58-b725-1fef97f11569) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
