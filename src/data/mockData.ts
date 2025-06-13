@@ -13,7 +13,7 @@ export const projectsData = [
     id: 2,
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
     title: "Business Consulting",
-    description: "Strategic advice that helped our clients achieve 30% revenue growth."
+    description: "Strategic advice that helped our clients achieve revenue growth."
   },
   {
     id: 3,
@@ -33,27 +33,15 @@ export const projectsData = [
 export const itServicesData = [
   {
     id: 1,
-    title: "Software Development",
-    description: "Custom software solutions tailored to your specific business needs, from web applications to mobile apps and enterprise systems.",
+    title: "Web Development",
+    description: "We design and develop responsive, custom websites that are fast, secure, and aligned with your brand. Our solutions are built to engage users and support your business goals.",
     icon: "💻"
   },
   {
     id: 2,
-    title: "Network Infrastructure",
-    description: "Design, implementation and maintenance of secure and efficient network infrastructures that scale with your business.",
-    icon: "🌐"
-  },
-  {
-    id: 3,
-    title: "Cloud Solutions",
-    description: "Migration, optimization and management of your data and applications on leading cloud platforms for enhanced flexibility and security.",
-    icon: "☁️"
-  },
-  {
-    id: 4,
-    title: "Cybersecurity",
-    description: "Comprehensive security services including risk assessment, penetration testing, and implementation of robust security measures.",
-    icon: "🔒"
+    title: "App Development",
+    description: "We create intuitive, user-friendly mobile apps tailored to your needs. From concept to launch, we focus on performance, design, and seamless user experience.",
+    icon: "📱"
   }
 ];
 
@@ -61,54 +49,42 @@ export const itServicesData = [
 export const marketingServicesData = [
   {
     id: 1,
-    title: "Digital Marketing",
-    description: "Strategic digital marketing campaigns across multiple channels to increase brand visibility and drive conversions.",
-    icon: "📱"
+    title: "Branding",
+    description: "We create unique visual identities that reflect your values and set you apart. From logos to brand guidelines, we ensure consistency and impact across every touchpoint.",
+    icon: "📊"
   },
   {
     id: 2,
-    title: "Brand Development",
-    description: "Crafting compelling brand identities that resonate with your target audience and set you apart from competitors.",
+    title: "Digital Marketing",
+    description: "We design data-driven strategies that grow your online presence. Through targeted content, SEO, and social media, we turn engagement into measurable results.",
     icon: "🎨"
-  },
-  {
-    id: 3,
-    title: "Content Creation",
-    description: "High-quality, engaging content tailored to your audience's needs and aligned with your marketing objectives.",
-    icon: "✍️"
-  },
-  {
-    id: 4,
-    title: "Market Analysis",
-    description: "In-depth research and analysis to identify market trends, customer behaviors, and strategic opportunities.",
-    icon: "📊"
   }
 ];
 
 // HR Services Data
-export const hrServicesData = [
+export const bsServicesData = [
   {
     id: 1,
-    title: "Talent Acquisition",
-    description: "Strategic recruitment services to identify and attract top talent that aligns with your company culture and objectives.",
+    title: "Market Study",
+    description: " We analyze your market to uncover trends, opportunities, and risks. Our insights help you position your offer and make informed strategic decisions.",
     icon: "🔍"
   },
   {
     id: 2,
-    title: "Employee Development",
-    description: "Customized training programs and development initiatives to enhance employee skills and productivity.",
+    title: "Satisfaction Study",
+    description: "We measure customer satisfaction to highlight strengths and areas for improvement. Our results guide you in building stronger client relationships.",
     icon: "📈"
   },
   {
     id: 3,
-    title: "HR Consulting",
-    description: "Expert guidance on HR policies, compliance, and best practices to optimize your human resources function.",
+    title: "Notoriety Study",
+    description: " We assess your brand’s visibility and public perception. \n Our analysis helps you refine your communication and boost recognition.",
     icon: "📝"
   },
   {
     id: 4,
-    title: "Performance Management",
-    description: "Effective systems to set goals, monitor progress, and enhance individual and team performance.",
+    title: "Business Plan",
+    description: " We craft clear, strategic business plans tailored to your goals. \nEach plan combines market insight, financial projections, and actionable steps.",
     icon: "🏆"
   }
 ];
@@ -117,28 +93,28 @@ export const hrServicesData = [
 export const statisticsData = [
   {
     id: 1,
-    value: 150,
+    value: 40,
     label: "Clients Served",
     suffix: "+",
     icon: "👥"
   },
   {
     id: 2,
-    value: 200,
+    value: 47,
     label: "Projects Completed",
     suffix: "+",
     icon: "✅"
   },
   {
     id: 3,
-    value: 15,
+    value: 10,
     label: "Years of Experience",
     suffix: "+",
     icon: "🏢"
   },
   {
     id: 4,
-    value: 98,
+    value: 96,
     label: "Satisfaction Rate",
     suffix: "%",
     icon: "⭐"

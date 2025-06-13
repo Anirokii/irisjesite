@@ -2,6 +2,7 @@
 import { useEffect } from 'react';
 import SectionTitle from '@/components/SectionTitle';
 import StatCard from '@/components/StatCard';
+import ContactSection from '@/components/ContactSection';
 import { statisticsData } from '@/data/mockData';
 import { setupRevealAnimations } from '@/utils/reveal';
 
@@ -10,18 +11,24 @@ const Statistics = () => {
     const cleanup = setupRevealAnimations();
     return cleanup;
   }, []);
-
+const scrollToContact = () => {
+      document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Banner */}
-      <section className="bg-brand-dark-blue text-white py-20">
-        <div className="container mx-auto px-4 text-center">
+      <section className="bg-gradient-to-r from-brand-dark-blue to-brand-dark-blue/90 text-white py-24 relative overflow-hidden">
+        <div className="absolute inset-0 overflow-hidden opacity-20">
+          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')] bg-cover bg-center"></div>
+        </div>
+        <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in-up">
-            Our Impact
+          Our Impact
           </h1>
-          <p className="text-xl max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          <p className="text-xl max-w-2xl mx-auto animate-fade-in-up opacity-90" style={{ animationDelay: '0.2s' }}>
             The numbers that showcase our commitment to excellence and client success.
           </p>
+          <div className="w-20 h-1 bg-brand-orange mx-auto mt-8"></div>
         </div>
       </section>
       
@@ -79,10 +86,10 @@ const Statistics = () => {
                 <div className="bg-gray-100 p-4 rounded-lg">
                   <div className="flex justify-between mb-2">
                     <span className="font-medium">Project Success Rate</span>
-                    <span className="text-brand-orange font-bold">98%</span>
+                    <span className="text-brand-orange font-bold">96%</span>
                   </div>
                   <div className="w-full bg-gray-300 rounded-full h-2.5">
-                    <div className="bg-brand-orange h-2.5 rounded-full" style={{ width: '98%' }}></div>
+                    <div className="bg-brand-orange h-2.5 rounded-full" style={{ width: '96%' }}></div>
                   </div>
                 </div>
                 
@@ -121,7 +128,7 @@ const Statistics = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             <div className="reveal bg-white/10 p-6 rounded-lg backdrop-blur-sm">
               <h3 className="text-2xl font-bold mb-4">Client Retention</h3>
-              <div className="text-5xl font-bold text-brand-orange mb-2">94%</div>
+              <div className="text-5xl font-bold text-brand-orange mb-2">96%</div>
               <p className="text-gray-300">Industry average: 70%</p>
               <div className="w-full bg-gray-700 rounded-full h-2.5 mt-4">
                 <div className="bg-brand-orange h-2.5 rounded-full" style={{ width: '94%' }}></div>
@@ -139,7 +146,7 @@ const Statistics = () => {
             
             <div className="reveal bg-white/10 p-6 rounded-lg backdrop-blur-sm" style={{ animationDelay: '0.4s' }}>
               <h3 className="text-2xl font-bold mb-4">Client Satisfaction</h3>
-              <div className="text-5xl font-bold text-brand-orange mb-2">4.9</div>
+              <div className="text-5xl font-bold text-brand-orange mb-2">4.7</div>
               <p className="text-gray-300">Average rating out of 5 vs. 4.1 industry average</p>
               <div className="w-full bg-gray-700 rounded-full h-2.5 mt-4">
                 <div className="bg-brand-orange h-2.5 rounded-full" style={{ width: '98%' }}></div>
@@ -148,37 +155,7 @@ const Statistics = () => {
           </div>
         </div>
       </section>
-      
-      {/* Team Growth Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 text-center">
-          <SectionTitle 
-            title="Our Team Growth" 
-            subtitle="Building a diverse team of experts to serve our growing client base."
-            centered={true}
-          />
-          
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="reveal">
-              <div className="text-4xl font-bold text-brand-dark-blue mb-2">2015</div>
-              <div className="text-6xl font-bold text-brand-orange mb-4">15</div>
-              <p className="text-gray-600">Team members at our founding</p>
-            </div>
-            
-            <div className="reveal" style={{ animationDelay: '0.2s' }}>
-              <div className="text-4xl font-bold text-brand-dark-blue mb-2">2020</div>
-              <div className="text-6xl font-bold text-brand-orange mb-4">50</div>
-              <p className="text-gray-600">Growing steadily with new expertise</p>
-            </div>
-            
-            <div className="reveal" style={{ animationDelay: '0.4s' }}>
-              <div className="text-4xl font-bold text-brand-dark-blue mb-2">Today</div>
-              <div className="text-6xl font-bold text-brand-orange mb-4">100+</div>
-              <p className="text-gray-600">Experts across multiple domains</p>
-            </div>
-          </div>
-        </div>
-      </section>
+
       
       {/* Call to Action */}
       <section className="py-20 bg-brand-orange">
@@ -188,13 +165,19 @@ const Statistics = () => {
             Join the hundreds of businesses that have transformed their operations and achieved remarkable growth with IRISJE Entreprise.
           </p>
           <button 
-            onClick={() => window.location.href = '/contact'}
+            onClick={scrollToContact}
             className="bg-white text-brand-orange px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors shadow-lg"
           >
             Contact Us Today
           </button>
         </div>
       </section>
+
+      {/* Contact Section */}
+      <section id='contact'>
+        <ContactSection />
+      </section>
+      
     </div>
   );
 };

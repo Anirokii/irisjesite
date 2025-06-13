@@ -17,8 +17,8 @@ const Home = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <HeroSection 
-        title="IRISJE Entreprise" 
-        subtitle="Your Partner for Innovative Business Solutions"
+        title="IRIS Junior Entreprise" 
+        subtitle="To The Next Level"
       />
       
       {/* About Section */}
@@ -27,25 +27,24 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="reveal">
               <SectionTitle 
-                title="Who We Are" 
-                subtitle="Your trusted partner for innovative solutions and exceptional service."
+                title="Who Are We ?" 
+                subtitle="We Don’t Just Grow Businesses, We Take Them to the Next Level"
               />
               <p className="text-gray-600 mb-6">
-                At IRISJE Entreprise, we are dedicated to helping businesses thrive through
-                innovative strategies, cutting-edge technology, and expert consultation. Our
-                team of professionals brings years of industry experience to deliver solutions
-                that drive growth and success.
+              At IRIS Junior Entreprise, we specialize in digital marketing, branding, web and app development,
+              and business consulting tailored to help start-ups and business owners grow with confidence.
               </p>
               <p className="text-gray-600">
-                We believe in building lasting relationships with our clients based on trust,
-                transparency, and exceptional results. Whether you're looking to optimize your
-                operations, expand your market reach, or transform your digital presence, we
-                have the expertise to guide you every step of the way.
+              What sets us apart is our unwavering commitment to your values, identity, and satisfaction.
+              Whether you're launching a brand or scaling your business, we bring a strategic blend of innovation,
+              resourcefulness, inspiration, and precision to every project. 
+              We don’t just deliver services—we build solutions that reflect who you are and where you want to go.
+
               </p>
             </div>
             <div className="reveal" style={{ animationDelay: '0.2s' }}>
               <img 
-                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                src="src\images\who.png"
                 alt="Our Team" 
                 className="rounded-lg shadow-xl w-full h-auto"
               />
@@ -61,19 +60,23 @@ const Home = () => {
             <div className="reveal">
               <SectionTitle title="Our Mission" light={true} />
               <p className="text-gray-300">
-                To empower businesses with innovative solutions that drive growth, efficiency,
-                and competitive advantage in an ever-evolving market landscape. We are committed
-                to delivering exceptional value through our expertise, integrity, and client-centered
-                approach.
+              At IRIS Junior Entreprise, our mission is to empower entrepreneurs and business leaders
+              by delivering tailored digital marketing, development, and business consulting solutions
+              that reflect their unique identity and drive measurable results. We aim to transform ideas 
+              into impactful strategies through innovation, creativity, and a deep understanding of our 
+              clients’ values and goals. Every project we take on is guided by a commitment to excellence, 
+              strategic thinking, and client satisfaction.
               </p>
             </div>
             <div className="reveal" style={{ animationDelay: '0.2s' }}>
               <SectionTitle title="Our Vision" light={true} />
               <p className="text-gray-300">
-                To be the leading provider of transformative business solutions, recognized for
-                our innovation, excellence, and the measurable impact we create for our clients.
-                We aspire to set new standards in the industry and be the partner of choice for
-                businesses seeking sustainable growth and success.
+                We envision a future where every ambitious brand—no matter its size—has access to high-quality,
+                 strategic support that propels it to the next level. At IRIS Junior Entreprise, 
+                 we strive to become a trusted reference in digital transformation and business development, 
+                 known for our ability to inspire growth, spark innovation, and deliver lasting impact 
+                 through smart, value-driven solutions.
+
               </p>
             </div>
           </div>
@@ -95,7 +98,9 @@ const Home = () => {
       </section>
       
       {/* Contact Section */}
-      <ContactSection />
+      <section id='contact'>
+        <ContactSection />
+      </section>
     </div>
   );
 };

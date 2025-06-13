@@ -107,7 +107,7 @@
 
   /* Hero Section */
   .hero-section {
-    background: linear-gradient(rgba(26, 57, 105, 0.8), rgba(26, 57, 105, 0.9)), url('/hero-background.jpg');
+    background: linear-gradient(rgba(26, 57, 105, 0.8), rgba(26, 57, 105, 0.9)), url('images/bannerStac.png');
     @apply bg-cover bg-center text-white;
   }
 }

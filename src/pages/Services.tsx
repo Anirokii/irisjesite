@@ -3,9 +3,10 @@ import { useEffect } from 'react';
 import SectionTitle from '@/components/SectionTitle';
 import ServiceCard from '@/components/ServiceCard';
 import ContactSection from '@/components/ContactSection';
-import { itServicesData, marketingServicesData, hrServicesData } from '@/data/mockData';
+import { itServicesData, marketingServicesData, bsServicesData } from '@/data/mockData';
 import { setupRevealAnimations } from '@/utils/reveal';
 import { Card, CardContent } from '@/components/ui/card';
+import { AlignJustify } from 'lucide-react';
 
 const Services = () => {
   useEffect(() => {
@@ -25,34 +26,74 @@ const Services = () => {
             Our Expertise
           </h1>
           <p className="text-xl max-w-2xl mx-auto animate-fade-in-up opacity-90" style={{ animationDelay: '0.2s' }}>
-            Comprehensive business solutions designed to empower your organization at every stage of growth.
+            Comprehensive business solutions designed to empower your business at every stage of growth.
           </p>
           <div className="w-20 h-1 bg-brand-orange mx-auto mt-8"></div>
         </div>
       </section>
       
-      {/* IT Services */}
+      {/* MK Services */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
             <div className="lg:col-span-5">
               <img 
-                src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
-                alt="IT Services" 
+                src="src\images\MarkSerice.jpg" 
+                alt="marketing Services" 
                 className="rounded-lg shadow-xl w-full h-auto object-cover reveal" 
                 style={{ animationDelay: '0.1s' }}
               />
             </div>
             <div className="lg:col-span-7 reveal" style={{ animationDelay: '0.2s' }}>
               <SectionTitle 
-                title="IT Services" 
-                subtitle="Cutting-edge technology solutions to drive your digital transformation."
+                title="Marketing Services" 
+                subtitle="Strategic marketing solutions to boost your brand presence and drive growth."
               />
               <p className="text-gray-600 mb-6">
-                Our IT department delivers comprehensive technology solutions that help businesses streamline operations, 
-                enhance security, and leverage the latest innovations. From custom software development to complete 
-                infrastructure management, our team of experts will help you navigate the digital landscape with confidence.
+              At IRIS Junior Enterprise, we don’t just follow trends—we create strategies that convert. 
+              Our marketing expertise blends creativity with data-driven precision to build strong brand identities, 
+              boost online visibility, and drive real business growth. From digital campaigns to market analysis, 
+              we craft solutions that deliver impact.
               </p>
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
+            {marketingServicesData.map((service, index) => (
+              <div key={service.id} className="reveal" style={{ animationDelay: `${0.1 * index}s` }}>
+                <ServiceCard
+                  icon={<span className="text-4xl">{service.icon}</span>}
+                  title={service.title}
+                  description={service.description}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      
+      {/* IT Services */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
+            <div className="lg:col-span-7 order-2 lg:order-1 reveal" style={{ animationDelay: '0.2s' }}>
+              <SectionTitle 
+                title="IT Services" 
+                subtitle="Cutting-edge technology solutions to drive your digital transformation"
+              />
+              <p className="text-gray-600 mb-6">
+              At IRIS Junior Enterprise, we deliver reliable, high-performance IT solutions tailored to your business goals. 
+              From custom web platforms to intuitive mobile apps, our tech team combines innovation and functionality 
+              to build tools that scale with your growth.
+              </p>
+            </div>
+            <div className="lg:col-span-5 order-1 lg:order-2">
+              <img 
+                src="src\images\itServcice.jpg" 
+                alt="Marketing Services" 
+                className="rounded-lg shadow-xl w-full h-auto object-cover reveal" 
+                style={{ animationDelay: '0.1s' }}
+              />
             </div>
           </div>
           
@@ -70,72 +111,32 @@ const Services = () => {
         </div>
       </section>
       
-      {/* Marketing Services */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
-            <div className="lg:col-span-7 order-2 lg:order-1 reveal" style={{ animationDelay: '0.2s' }}>
-              <SectionTitle 
-                title="Marketing Services" 
-                subtitle="Strategic marketing solutions to boost your brand presence and drive growth."
-              />
-              <p className="text-gray-600 mb-6">
-                Our marketing experts help businesses build strong brands, reach target audiences, and achieve sustainable growth. 
-                We combine data-driven insights with creative strategies to deliver campaigns that resonate with your audience 
-                and generate measurable results across digital and traditional channels.
-              </p>
-            </div>
-            <div className="lg:col-span-5 order-1 lg:order-2">
-              <img 
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
-                alt="Marketing Services" 
-                className="rounded-lg shadow-xl w-full h-auto object-cover reveal" 
-                style={{ animationDelay: '0.1s' }}
-              />
-            </div>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {marketingServicesData.map((service, index) => (
-              <div key={service.id} className="reveal" style={{ animationDelay: `${0.1 * index}s` }}>
-                <ServiceCard
-                  icon={<span className="text-4xl">{service.icon}</span>}
-                  title={service.title}
-                  description={service.description}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      
-      {/* HR Services */}
+      {/* Business Services */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
             <div className="lg:col-span-5">
               <img 
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
-                alt="HR Services" 
+                src="src\images\bsService.jpg" 
+                alt="Business Services" 
                 className="rounded-lg shadow-xl w-full h-auto object-cover reveal" 
                 style={{ animationDelay: '0.1s' }}
               />
             </div>
             <div className="lg:col-span-7 reveal" style={{ animationDelay: '0.2s' }}>
               <SectionTitle 
-                title="HR Services" 
+                title="Business Services" 
                 subtitle="Comprehensive human resource solutions to optimize your talent management."
               />
               <p className="text-gray-600 mb-6">
-                Our HR services help organizations attract, develop, and retain top talent. From recruitment and 
-                onboarding to performance management and succession planning, we provide strategic support to 
-                build strong teams and cultivate positive workplace cultures that drive business success.
+              At IRIS Junior Enterprise, our business consulting services turn ideas into actionable strategies. 
+              We analyze, plan, and guide with precision to help start-ups and growing businesses make smart, sustainable decisions.
               </p>
             </div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {hrServicesData.map((service, index) => (
+            {bsServicesData.map((service, index) => (
               <div key={service.id} className="reveal" style={{ animationDelay: `${0.1 * index}s` }}>
                 <ServiceCard
                   icon={<span className="text-4xl">{service.icon}</span>}
@@ -152,7 +153,7 @@ const Services = () => {
       <section className="py-20 bg-brand-dark-blue text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose IRISJE Entreprise</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose IRIS Junior Entreprise</h2>
             <div className="w-20 h-1 bg-brand-orange mx-auto mt-4 mb-8"></div>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               We combine industry expertise, innovative thinking, and personalized service 

@@ -9,9 +9,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <h4 className="text-xl font-bold mb-4">IRISJE Entreprise</h4>
+            <h4 className="text-xl font-bold mb-4">IRIS Junior Entreprise</h4>
             <p className="text-gray-300 mb-4">
-              Your trusted partner for innovative solutions and exceptional service.
+            Your Vision, Our Strategy — To the Next Level.
             </p>
             <div className="flex space-x-4">
               {/* Social Media Icons would go here */}
@@ -46,15 +46,15 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center space-x-2">
                 <MapPin size={16} className="text-brand-orange" />
-                <span className="text-gray-300">123 Business Street, City, Country</span>
+                <span className="text-gray-300">Soukra km4 3052 - Sfax - Tunisia</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone size={16} className="text-brand-orange" />
-                <span className="text-gray-300">+1 (123) 456-7890</span>
+                <span className="text-gray-300">+(216) 50 445 369</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail size={16} className="text-brand-orange" />
-                <span className="text-gray-300">info@irisje-entreprise.com</span>
+                <span className="text-gray-300">contact.irisje@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -62,7 +62,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-700 mt-8 pt-6 text-center">
           <p className="text-gray-400">
-            &copy; {new Date().getFullYear()} IRISJE Entreprise. All rights reserved.
+            &copy; {new Date().getFullYear()} IRISJE. All rights reserved.
           </p>
         </div>
       </div>

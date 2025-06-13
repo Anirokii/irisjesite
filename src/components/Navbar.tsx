@@ -14,10 +14,18 @@ const Navbar = () => {
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
+          {/*<Link to="/" className="flex items-center space-x-3">
+            <span className="text-2xl font-bold text-brand-dark-blue">IRIS</span>
+            <span className="text-brand-orange font-semibold">JE vvv</span>
+          </Link>*/}
           <Link to="/" className="flex items-center space-x-3">
-            <span className="text-2xl font-bold text-brand-dark-blue">IRISJE</span>
-            <span className="text-brand-orange font-semibold">Entreprise</span>
+            <img
+              src="src\images\irislogo.png"
+              alt="IRISJE Logo"
+              className="h-10 w-auto"
+            />
           </Link>
+
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">

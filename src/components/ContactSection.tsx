@@ -42,7 +42,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section id="contact" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -50,8 +50,8 @@ const ContactSection = () => {
               <h2 className="text-3xl font-bold text-brand-dark-blue mb-2">Get in Touch</h2>
               <div className="w-20 h-1 bg-brand-orange mb-6"></div>
               <p className="text-gray-600 mb-8">
-                Have questions or want to discuss how we can help your business? 
-                We're here to assist you. Reach out to us through any of the following channels:
+                Ready to take your business to the next level? Contact IRIS Junior Entreprise for expert support. 
+                Let’s turn your vision into action—reach out today to start building smarter, stronger strategies for your growth.
               </p>
               
               <div className="space-y-6">
@@ -61,7 +61,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-900 text-lg">Address</h4>
-                    <p className="text-gray-600">123 Business Street, City, Country</p>
+                    <p className="text-gray-600">Soukra km4 3052 - Sfax - Tunisia</p>
                   </div>
                 </div>
                 
@@ -71,7 +71,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-900 text-lg">Phone</h4>
-                    <p className="text-gray-600">+1 (123) 456-7890</p>
+                    <p className="text-gray-600">+(216) 50 445 369</p>
                   </div>
                 </div>
                 
@@ -81,18 +81,20 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-900 text-lg">Email</h4>
-                    <p className="text-gray-600">info@irisje-entreprise.com</p>
+                    <p className="text-gray-600">contact.irisje@gmail.com</p>
                   </div>
                 </div>
               </div>
-              
+            
               <div className="mt-8 rounded-lg overflow-hidden">
-                <img 
-                  src="https://maps.googleapis.com/maps/api/staticmap?center=city+country&zoom=14&size=600x300&key=YOUR_API_KEY" 
-                  alt="Our Location" 
-                  className="w-full h-[200px] object-cover"
-                />
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.1710782579275!2d10.715168875547315!3d34.72608187291064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13002ca4425ed6a1%3A0x1cb1842d2707fe25!2s%C3%89cole%20Nationale%20d&#39;Ing%C3%A9nieurs%20de%20Sfax%20-%20ENIS!5e0!3m2!1sfr!2stn!4v1746494120262!5m2!1sfr!2stn"
+                  className="w-full h-[300px] border-0"
+                      loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
+
             </div>
             
             <div>
